@@ -3,9 +3,10 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+import Event from "./components/Events/Events";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/Resume";
+import Sponsors from "./components/Sponsors/Sponsors";
+import Faq from "./components/FAQ/faq"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
@@ -32,9 +33,10 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/project" component={Projects} />
+          <Route path="/event" component={Event} />
           <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
+          <Route path="/faq" component={Faq} />
+          <Route path="/sponsors" component={Sponsors} />
         </Switch>
         <Footer />
       </div>

@@ -1,7 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 body {
   margin: 0;
   font-family: "Harry Potter", serif !important;
+  /* font-family: 'Short Stack', cursive !important; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
