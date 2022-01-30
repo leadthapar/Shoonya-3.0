@@ -1,6 +1,5 @@
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
