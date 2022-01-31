@@ -10,9 +10,10 @@ import Resume from "./components/Sponsors/Resume";
 
 import Schedule from "./components/Schedule/schedule"
 import Faq from "./components/FAQ/faq"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./style.css";
 import "./App.css";
+import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import ScrollToTop from "./components/ScrollToTop";

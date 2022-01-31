@@ -705,7 +705,7 @@ line-height: 144px;
 
 .about-section {
 
-  position: relative !important;
+  position: sticky !important;
   background-image: var(--image-gradient), url(./Assets/aboutUs.jpeg);
   padding-top: 150px !important;
   padding-bottom: 150px !important;
@@ -766,17 +766,18 @@ line-height: 144px;
     padding-top: 0 !important;
   }
 }
-/* --------- */
-/* Sponsors */
-/* --------- */
 
 
 .resume-section {
-  
+  position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--image-gradient), url(./Assets/sponsors.jpeg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-size: cover;
   color: white !important;
 }
 
@@ -793,7 +794,7 @@ line-height: 144px;
   padding-left: 80px !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 0px) {
   .resume-left {
     padding-right: 15px !important;
     padding-left: 15px !important;
