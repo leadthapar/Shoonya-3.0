@@ -1,6 +1,6 @@
 {
   "name": "shoonya",
-  "homepage":".",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,26 +14,14 @@
     "react-countdown-circle-timer": "^3.0.8",
     "react-dom": "^17.0.2",
     "react-github-calendar": "^2.0.2",
-<<<<<<< Updated upstream
-    "react-icons": "^4.3.1",
-    "react-parallax-tilt": "^1.5.90",
-    "react-particles-js": "^3.6.0",
-    "react-router-dom": "^5.3.0",
-
-    "react-scripts": "^4.0.1",
-
     "react-vertical-timeline-component": "^3.5.2",
-    "typewriter-effect": "^2.18.2",
-=======
     "react-icons": "^4.2.0",
     "react-parallax-tilt": "^1.4.68",
     "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
     "typewriter-effect": "^2.17.0",
->>>>>>> Stashed changes
     "web-vitals": "^0.2.4"
-    
   },
   "scripts": {
     "start": "react-scripts start",
