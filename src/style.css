@@ -308,6 +308,7 @@ html {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding-bottom: -10px !important;
   padding-top: -100px !important;
 }
@@ -365,7 +366,7 @@ top: 168px;
 font-family: Harry Potter;
 font-style: normal;
 font-weight: normal;
-font-size: 96px;
+font-size: 85px;
 line-height: 144px;
 }
 
@@ -382,8 +383,8 @@ line-height: 144px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 300px !important;
-  padding-top: 30px !important;
+  padding-bottom: -10px !important;
+  padding-top: -100px !important;
 }
 
 
@@ -415,8 +416,8 @@ line-height: 144px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-bottom: -10px !important;
+  padding-top: -100px !important;
 }
 
 
@@ -600,15 +601,15 @@ line-height: 144px;
 /* Events */
 /* --------- */
 .event-section {
+  size: 100%;
   background-image: var(--image-gradient), url(./Assets/events1.jpeg);
+  height: 100%;
+  width: 100%;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 2000px 1000px 1000px 1000px;
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 150px !important;
-
+  padding-bottom: 100px !important;
+  padding-top: 100px !important;
 }
 
 .event-card {
@@ -699,6 +700,23 @@ line-height: 144px;
   padding-top: 10px !important;
 }
 
+.modal-heading {
+  font-family: 'Story Maker GT', sans-serif;
+  font-size: 2.25rem;
+}
+.modal-para {
+  font-family: 'Short Stack', cursive;
+}
+
+.modal-button {
+  font-family: 'Story Maker GT', sans-serif;
+  font-size: 2.0rem;
+}
+
+.modal-content {
+  background:linear-gradient(to right, #AA771C, #B5AF71, #AA771C) !important;
+}
+
 /* --------- */
 /* About */
 /* --------- */
@@ -776,7 +794,6 @@ line-height: 144px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
   background-size: cover;
   color: white !important;
 }
@@ -912,7 +929,7 @@ line-height: 144px;
   display: none !important;
 } */
 .countdown {
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   font-family:  'Magic Owl', sans-serif;
   text-align: center;

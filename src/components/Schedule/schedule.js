@@ -19,10 +19,8 @@ function schedule() {
           <Row style={{ justifyContent: "left",paddingTop: "-100px",margin:"-10px",border:"-20px"}}>
             <Col md={7} className="schedule-header">
                 <h1 className="faq-name">
-                Schedule
+                Timeline
                 </h1>
-                <h1 className="title">Timeline</h1>
-      
             </Col>
           </Row>
           <VerticalTimeline>
