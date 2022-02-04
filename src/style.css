@@ -608,7 +608,7 @@ line-height: 144px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 100px !important;
+  padding-bottom: 200px !important;
   padding-top: 100px !important;
 }
 
@@ -682,6 +682,8 @@ line-height: 144px;
   color: #fff !important;
   background-color: #000000 !important;
   border-color: #000000 !important;
+  font-family: 'Magic Owl', sans-serif;
+  font-size: 1.25rem !important;
 }
 
 .btn-primary:hover {
@@ -701,20 +703,34 @@ line-height: 144px;
 }
 
 .modal-heading {
-  font-family: 'Story Maker GT', sans-serif;
-  font-size: 2.25rem;
+  font-family: 'Magic Owl', sans-serif;
+  font-size: 1.8rem !important;
 }
 .modal-para {
   font-family: 'Short Stack', cursive;
 }
 
 .modal-button {
-  font-family: 'Story Maker GT', sans-serif;
-  font-size: 2.0rem;
+  font-family: 'Magic Owl', sans-serif;
+  font-size: 1.25rem !important;
 }
 
 .modal-content {
   background:linear-gradient(to right, #AA771C, #B5AF71, #AA771C) !important;
+}
+
+.row-modal {
+  justify-content: space-around;
+  display: flex;
+  font-family: 'Short Stack', cursive;
+}
+
+.col-modal {
+  font-family: 'Short Stack', cursive;
+}
+
+.form-group {
+  font-family: 'Short Stack', cursive;
 }
 
 /* --------- */
@@ -728,6 +744,7 @@ line-height: 144px;
   padding-top: 150px !important;
   padding-bottom: 150px !important;
   background-position: top center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   color: white !important;
 }
@@ -785,6 +802,15 @@ line-height: 144px;
   }
 }
 
+.row {
+  margin-left: 60px !important;
+}
+
+@media (max-width: 767px) {
+  .row {
+    margin-left: 10px !important;
+  }
+}
 
 .resume-section {
   position: relative !important;
@@ -940,3 +966,4 @@ line-height: 144px;
   font-size: 32px;
   color: #b3831e;
 }
+

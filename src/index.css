@@ -69,3 +69,11 @@ background-color: 'black';
   transform: rotateY(180deg);
   z-index: 100;
 }
+
+.card-desc {
+  font-family: 'Short Stack', cursive !important;
+}
+
+.card-title {
+  font-family: 'Magic Owl', sans-serif;
+}
