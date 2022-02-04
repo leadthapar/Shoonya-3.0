@@ -9,6 +9,7 @@ const Button = styled.button`
   min-width: 100px;
   padding: 16px 32px;
   border-radius: 4px;
+  margin-top: 15px;
   font-size: 24px;
   cursor: pointer;
   border-color: #BF953F;
@@ -47,8 +48,9 @@ function Event() {
               Antisocial voras miment, respektive hadat. Tebel konfili. Orys frisparkssprej, nyns. Käprefav idisade posttologi premusam. Muvor vav liksom sode. Pongar mansskatt."
               />
               <br></br>
-            <Button onClick={openModal} className="event-button">Know More</Button>
-            <Modals showModal={showModal} setShowModal={setShowModal} />
+              <Button onClick={openModal}>Register</Button>
+              <Modals showModal={showModal} setShowModal={setShowModal} />
+              <Button>Know Your Team</Button>
           </Col>
 
           <Col md={4} className="event-card">
@@ -61,8 +63,9 @@ function Event() {
               
             />
             <br></br>
-            <Button onClick={openModal} className="event-button">Know More</Button>
+            <Button onClick={openModal}>Register</Button>
             <Modals showModal={showModal} setShowModal={setShowModal} />
+            <Button>Know Your Team</Button>
           </Col>
 
           <Col md={4} className="event-card">
@@ -75,8 +78,9 @@ function Event() {
               
             />
             <br></br>
-            <Button onClick={openModal} className="event-button">Know More</Button>
+            <Button onClick={openModal}>Register</Button>
             <Modals showModal={showModal} setShowModal={setShowModal} />
+            <Button>Know Your Team</Button>
           </Col>
         </Row>
       </Container>

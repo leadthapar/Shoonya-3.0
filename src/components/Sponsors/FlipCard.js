@@ -15,8 +15,8 @@ const FlipCard = (props)=>{
 
     <Card style={{height:'15em'}} className="bg-dark text-light rounded">
   <Card.Body>
-    <Card.Title><h3 className="font-weight-bold">{props.name}</h3></Card.Title>
-    <Card.Text>
+    <Card.Title className="card-title"><h3 className="font-weight-bold">{props.name}</h3></Card.Title>
+    <Card.Text className="card-desc">
      {props.desc}
      
     </Card.Text>

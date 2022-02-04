@@ -5,28 +5,40 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="550px"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Event
+        <Modal.Title className="modal-heading" id="contained-modal-title-vcenter">
+          Register Now!!
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4 className='modal-heading'>Event 1</h4>
-        <p className='modal-para'>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <form>
+          <div class="row-modal">
+            <div class="col-xs-2">
+            <label for="label1" required>Player1 Id:</label>
+            <input type="text" class="form-control" id="label1" placeholder="Enter 1st Player Id" required />
+          </div>
+          <div class="col-modal">
+            <label for="phone">Enter a phone number:</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="9876XXXXXX" pattern="[0-9]{10}" required /><br></br>
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="label2">Player2 Id:</label>
+            <input type="text" class="form-control" id="label2" placeholder="Enter 2nd Player Id" />
+          </div>
+          <div class="form-group">
+            <label for="label3">Player3 Id:</label>
+            <input type="text" class="form-control" id="label3" placeholder="Enter 3rd Player Id" />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide} className='modal-button'>Close</Button>
-        <Button className='modal-button'>
-            Register
-          </Button>
       </Modal.Footer>
     </Modal>
   );
