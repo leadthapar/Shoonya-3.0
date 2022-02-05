@@ -73,10 +73,7 @@ font-family: 'Short Stack', cursive !important;
 export default function App() {
   return (
     <>
-      
-      <a href="#" target="_blank">
         <Button>LOGIN</Button>
-      </a>
     </>
   );
 }
