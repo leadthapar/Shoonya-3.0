@@ -30,10 +30,20 @@ const Button = styled.button`
 `;
 
 function Event() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal1, setShowModal1] = useState(false);
 
-  const openModal = () => {
-    setShowModal(true);
+  const openModal1 = () => {
+    setShowModal1(true);
+  };
+  const [showModal2, setShowModal2] = useState(false);
+
+  const openModal2 = () => {
+    setShowModal2(true);
+  };
+  const [showModal3, setShowModal3] = useState(false);
+
+  const openModal3 = () => {
+    setShowModal3(true);
   };
   return (
     <Container fluid className="event-section">
@@ -51,8 +61,8 @@ function Event() {
               description="This will be a day-long coding competition held in teams of either 1 or 2 members. Every round will be a knockout round introducing the participants to a new aspect of coding. Round 1 will be a mystery language round where participants will be assigned a mystery language and will have to solve three questions based on that. Round 2 will be a debugging round which will act as a hint for the last round. "
               />
               <br></br>
-              <Button onClick={openModal}>Register</Button>
-              <Modal1 showModal={showModal} setShowModal={setShowModal} />
+              <Button onClick={openModal1}>Register</Button>
+              <Modal1 showModal={showModal1} setShowModal={setShowModal1} />
               <Button>Know Your Team</Button>
           </Col>
 
@@ -65,8 +75,8 @@ function Event() {
               
             />
             <br></br>
-            <Button onClick={openModal}>Register</Button>
-            <Modal2 showModal={showModal} setShowModal={setShowModal} />
+            <Button onClick={openModal2}>Register</Button>
+            <Modal2 showModal={showModal2} setShowModal={setShowModal2} />
             <Button>Know Your Team</Button>
           </Col>
 
@@ -79,8 +89,8 @@ function Event() {
               
             />
             <br></br>
-            <Button onClick={openModal}>Register</Button>
-            <Modal3 showModal={showModal} setShowModal={setShowModal} />
+            <Button onClick={openModal3}>Register</Button>
+            <Modal3 showModal={showModal3} setShowModal={setShowModal3} />
             <Button>Know Your Team</Button>
           </Col>
         </Row>

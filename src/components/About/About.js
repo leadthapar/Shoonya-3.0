@@ -15,7 +15,7 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1 className="abt-head" style={{ fontSize: "80px", paddingBottom: "20px", marginLeft: "-650px", marginTop: "-30px" }}>
               About Us
             </h1>
             <Aboutcard />

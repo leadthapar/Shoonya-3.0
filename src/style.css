@@ -359,10 +359,11 @@ html {
 }
 
 .faq-name {
-width: 809px;
+width: 700px;
 height: 148px;
-left: 70px;
+left: 50px;
 top: 168px;
+margin-left: 60px;
 font-family: Harry Potter;
 font-style: normal;
 font-weight: normal;
@@ -699,7 +700,8 @@ line-height: 144px;
   color: white !important;
   font-size: 5em !important;
   font-weight: 500 !important;
-  padding-top: 10px !important;
+  padding-top: 45px !important;
+  margin-left: -600px !important;
 }
 
 .modal-heading {
@@ -733,6 +735,16 @@ line-height: 144px;
   font-family: 'Short Stack', cursive;
 }
 
+@media (max-width: 767px) {
+  .event-heading {
+    margin-left: 50px !important;
+    margin-top: 40px !important;
+  }
+  .event-card {
+    padding-bottom: 180px !important;
+  }
+}
+
 /* --------- */
 /* About */
 /* --------- */
@@ -749,6 +761,12 @@ line-height: 144px;
   color: white !important;
 }
 
+@media (max-width: 767px) {
+  .abt-head {
+    margin-left: 50px !important;
+    margin-top: 40px !important;
+  }
+}
 
 .tech-icons {
   font-size: 4.5em !important;
@@ -829,12 +847,29 @@ line-height: 144px;
   padding-bottom: 50px;
 }
 
+.reshead {
+  justify-content: left; 
+  font-size: 85px;
+  margin-left: -600px;
+  padding-top: 40px;
+}
+
 .resume-left {
   padding-right: 80px !important;
 }
 
 .resume-right {
   padding-left: 80px !important;
+}
+
+@media (max-width: 767px) {
+  .reshead {
+    margin-left: 50px !important;
+    margin-top: 40px !important;
+  }
+  .row {
+    margin-left: 100px !important;
+  }
 }
 
 @media (max-width: 0px) {

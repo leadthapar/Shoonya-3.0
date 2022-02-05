@@ -7,7 +7,7 @@ function Resume() {
   return (
     <div >
     <Container fluid className='resume-section'>
-    <h1 className="my-5 text-light font-weight-bold" style={{justifyContent:"left"}}>Our Sponsors</h1>
+    <h1 className="reshead">Our Sponsors</h1>
  
   <Container className="my-5 text-light">
   <div className="row">
