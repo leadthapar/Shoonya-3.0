@@ -8,22 +8,19 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-          Lörem ipsum fysans hackathon och dedade. Sars nynt att dissade as. 
-          Denylig belogi airbaghjälm osågt. Kapselbryggare exol de jitt, att grit. 
-          Neogam blinga kulturell appropriering apofas nesa. Kosläpp dialig med tädobel. 
-          Antisocial voras miment, respektive hadat. Tebel konfili. Orys frisparkssprej, 
-          nyns. Käprefav idisade posttologi premusam. Muvor vav liksom sode. Pongar mansskatt. 
-          Dispen pseudonera plav. 
+          Shoonya 3.0 is an annual flagship week-long event organized by the members of LEAD society, Thapar Institute of Engineering and Technology, Patiala.
+Continuing the legacy forward, the event's third edition comprises three major sub-events, The Triwizard Tournament, Weasely's Pitchers, Chamber of Secrets. Shoonya 3.0 targets both technical and non-technical skills of candidates. In addition, it is a team-based event, so it encourages the spirit of teamwork. Each event poses a new challenge and requires you to put on your creative hats and play with codes in the magical realm. The three events are as follows:
+
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> event 1
+              <ImPointRight /> The Triwizard Tournament
             </li>
             <li className="about-activity">
-              <ImPointRight /> event 2
+              <ImPointRight /> Weasley's Pitchers
             </li>
             <li className="about-activity">
-              <ImPointRight /> event3
+              <ImPointRight /> Chamber of Secrets (CTF)
             </li>
           </ul>
           <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>

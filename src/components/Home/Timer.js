@@ -27,7 +27,7 @@ const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
 
 export default function App() {
-    const date= "30 Feb 2022";
+    const date= "27 Feb 2022";
     const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
     const endTime = new Date(date)/1000;                   //stratTime + 243248;
 
