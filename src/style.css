@@ -952,7 +952,7 @@ line-height: 144px;
   transform: translateY(-2px) !important;
   background-color: #00000086 !important;
   border-color: #00000086 !important;
-} */
+}
 
 .animate-like {
   animation-name: likeAnimation;
@@ -975,7 +975,7 @@ line-height: 144px;
   100% {
     transform: scale(1);
   }
-}*/
+}
 
 /* .fork-btn {
   font-size: 1.1em !important;
