@@ -27,12 +27,24 @@ function MyVerticallyCenteredModal(props) {
           </div>
           </div>
           <div class="form-group">
+            <label for="team-name">Team Name:</label>
+            <input type="text" class="form-control" id="team-name" placeholder="Enter your Team Name" required/>
+          </div>
+          <div class="form-group">
+            <label for="disc">Discord Id:</label>
+            <input type="text" class="form-control" id="disc" placeholder="Enter Discord Id" required />
+          </div>
+          <div class="form-group">
             <label for="label2">Player2 Id:</label>
             <input type="text" class="form-control" id="label2" placeholder="Enter 2nd Player Id" />
           </div>
           <div class="form-group">
             <label for="label3">Player3 Id:</label>
             <input type="text" class="form-control" id="label3" placeholder="Enter 3rd Player Id" />
+          </div>
+          <div class="form-group">
+            <label for="label4">Player 4 Id:</label>
+            <input type="text" class="form-control" id="label4" placeholder="Enter 4th Player Id" />
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>

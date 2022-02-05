@@ -19,6 +19,7 @@ function Faq() {
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
+              marginLeft: "-110px",
             }}>
               <section className='info'>
           {questions.map((question) => {

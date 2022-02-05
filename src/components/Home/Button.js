@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 
-const theme = {
-  blue: {
-    default: "#b3831e",
-    hover: "#b3831e"
-  },
-  pink: {
-    default: "#e91e63",
-    hover: "#ad1457"
-  }
-};
+// const theme = {
+//   blue: {
+//     default: "#b3831e",
+//     hover: "#b3831e"
+//   },
+//   pink: {
+//     default: "#e91e63",
+//     hover: "#ad1457"
+//   }
+// };
 
 const Button = styled.button`
 min-width: 100px;
 padding: 16px 32px;
 border-radius: 4px;
-margin-bottom: 55px;
+margin-top: -65px;
+margin-bottom: 120px;
 font-size: 26px;
 cursor: pointer;
 border-color: #BF953F;
@@ -26,6 +27,7 @@ color: white !important;
 background-color: transparent !important;
 opacity: 0.9 !important;
 transition: all 0.5s ease 0s !important;
+font-family: 'Short Stack', cursive !important;
 &:hover{
     transform: scale(1.02) !important;
     overflow: hidden !important;
@@ -33,9 +35,9 @@ transition: all 0.5s ease 0s !important;
   }
 `;
 
-Button.defaultProps = {
-  theme: "blue"
-};
+// Button.defaultProps = {
+//   theme: "blue"
+// };
 
 // function clickMe() {
 //   alert("You clicked me!");
