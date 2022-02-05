@@ -6,11 +6,14 @@ function Sponsors() {
   return (
     <Container fluid className="sponsor-section" >
       <Container>
-        <Row className="sponsor">
-          <Col md={6} className="sponsor-left">
-          <h1 className="sponsor-heading">
+        <Row>
+      <h1 className="sponsor-heading">
           Title Sponsors
         </h1>
+        </Row>
+        <Row className="sponsor">
+          <Col md={6} className="sponsor-left">
+          
           </Col>
         </Row>
       </Container>

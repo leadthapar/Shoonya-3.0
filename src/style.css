@@ -697,7 +697,7 @@ line-height: 144px;
 }
 .event-heading {
   color: white !important;
-  font-size: 2.3em !important;
+  font-size: 5em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
 }
@@ -924,6 +924,15 @@ line-height: 144px;
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
+.sponsor-heading{
+  justify-content: left;
+  color: white !important;
+  font-size: 5em !important;
+  font-weight: 500 !important;
+  padding-top: 20px;
+  padding-left: 100px !important;
+}
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
@@ -955,11 +964,11 @@ line-height: 144px;
   display: none !important;
 } */
 .countdown {
-  display: flex !important;
+  display: flex;
   justify-content: space-around;
   font-family:  'Magic Owl', sans-serif;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 40px !important;
 }
 
 .time {
@@ -967,3 +976,16 @@ line-height: 144px;
   color: #b3831e;
 }
 
+.btn{
+  padding-bottom: 10px !important ;
+  margin:0 0 10px 0;
+}
+
+.timer{
+  justify-content: center !important;
+  
+}
+.timer2{
+  padding: 20px;
+
+}
