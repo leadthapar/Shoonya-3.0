@@ -3,31 +3,31 @@ const questions = [
       id: 1,
       title: 'What is Shoonya?',
       info:
-        'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+        "Shoonya is LEAD's most awaited flagship event. It is organized, keeping in mind both technical and non-technical skills development. The events in this are designed to test critical thinking skills, enrich competitive nature, and boost the participants' teamwork spirit.",
     },
     {
       id: 2,
       title: 'How can I participate in the events?',
       info:
-        'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+        "You can register through the ‘Register’ option given under the 'Events' section to participate in any of the events.",
     },
     {
       id: 3,
       title: 'Is there any prior knowledge required?',
       info:
-        'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+        'No prior knowledge is required to participate in any of the events. The events are constructed in a way that will help build logic and reasoning. Only willingness to think and learn is needed',
     },
     {
       id: 4,
       title: 'Do I need a team?',
       info:
-        'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
+        'It is not mandatory to have a team as all our events also have an option of individual participation. Maximum team size of all the events are mentioned in their respective rulebooks.',
     },
     {
       id: 5,
       title: 'Any other queries?',
       info:
-        'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+        'If you have any other queries related to the event, you could drop a mail to us at Lead_sc@thapar.edu .We would be pleased to assist and clear your doubts.',
     },
   ]
   export default questions

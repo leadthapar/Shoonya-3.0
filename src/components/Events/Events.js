@@ -1,7 +1,9 @@
 import { React, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import EventCard from "./EventCards";
-import chatify from "../../Assets/imageevent1.png";
+import monopoly from "../../Assets/monopoly.jpeg";
+import ctf from "../../Assets/ctf.jpeg";
+import journaling from "../../Assets/journaling.jpeg";
 import {Modal1} from '../Modal/Modal1';
 import {Modal2} from '../Modal/Modal2';
 import {Modal3} from '../Modal/Modal3';
@@ -43,11 +45,10 @@ function Event() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="event-card">
             <EventCard
-              imgPath={chatify}
+              imgPath={monopoly}
               isBlog={false}
-              title="EVENT 1"
-              description="Lörem ipsum fysans hackathon och dedade. Sars nynt att dissade as. Denylig belogi airbaghjälm osågt. Kapselbryggare exol de jitt, att grit. Neogam blinga kulturell appropriering apofas nesa. Kosläpp dialig med tädobel. 
-              Antisocial voras miment, respektive hadat. Tebel konfili. Orys frisparkssprej, nyns. Käprefav idisade posttologi premusam. Muvor vav liksom sode. Pongar mansskatt."
+              title="Triwizard Tournament"
+              description="This will be a day-long coding competition held in teams of either 1 or 2 members. Every round will be a knockout round introducing the participants to a new aspect of coding. Round 1 will be a mystery language round where participants will be assigned a mystery language and will have to solve three questions based on that. Round 2 will be a debugging round which will act as a hint for the last round. "
               />
               <br></br>
               <Button onClick={openModal}>Register</Button>
@@ -57,11 +58,10 @@ function Event() {
 
           <Col md={4} className="event-card">
             <EventCard
-              imgPath={chatify}
+              imgPath={ctf}
               isBlog={false}
-              title="EVENT 2"
-              description="Lörem ipsum fysans hackathon och dedade. Sars nynt att dissade as. Denylig belogi airbaghjälm osågt. Kapselbryggare exol de jitt, att grit. Neogam blinga kulturell appropriering apofas nesa. Kosläpp dialig med tädobel. 
-              Antisocial voras miment, respektive hadat. Tebel konfili. Orys frisparkssprej, nyns. Käprefav idisade posttologi premusam. Muvor vav liksom sode. Pongar mansskatt."
+              title="Chamber of Secrets"
+              description="This will be a time-based team CTF where teams of 3-4 members will be provided with a particular problem. Individual registrations are allowed, in which case the organizing committee will form teams. After solving, a clue will be generated which will direct the teams to a specific piece of the story. In the end, after clubbing all the clues, an account of a synchronous story will be formed. The teams with the most appropriate stories would be declared the winners."
               
             />
             <br></br>
@@ -72,11 +72,10 @@ function Event() {
 
           <Col md={4} className="event-card">
             <EventCard
-              imgPath={chatify}
+              imgPath={journaling}
               isBlog={false}
-              title="EVENT 3"
-              description="Lörem ipsum fysans hackathon och dedade. Sars nynt att dissade as. Denylig belogi airbaghjälm osågt. Kapselbryggare exol de jitt, att grit. Neogam blinga kulturell appropriering apofas nesa. Kosläpp dialig med tädobel. 
-              Antisocial voras miment, respektive hadat. Tebel konfili. Orys frisparkssprej, nyns. Käprefav idisade posttologi premusam. Muvor vav liksom sode. Pongar mansskatt."
+              title="Weasly’s Pitchers"
+              description="This event will be a pitching event held in teams of either 1 or 2 members. Every team will be given a product to sell and their pitch will revolve around the same.Teams are supposed to use a ppt or a poster in their pitch which would eventually exhibit their creativity and presentation skills"
               
             />
             <br></br>
