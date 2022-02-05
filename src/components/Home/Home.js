@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type";
 import Timer from "./Timer";
+import Button from "./Button";
 
 function Home() {
   return (  
@@ -14,13 +15,26 @@ function Home() {
               <h1 className="heading-name">
                 Welcome to LEAD Society
               </h1>
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding:"50px", textAlign: "left" }}>
                 <Type />
               </div>
-              <Timer />
+              
             </Col>
+            
           </Row>
+          <div>
+          <Timer />
+          </div>
+          
         </Container>
+        <Row>
+          
+        
+        
+        </Row>
+        <Row className="btn">
+        <Button />
+        </Row>
       </Container>
       
     </section>

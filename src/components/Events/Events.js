@@ -2,7 +2,9 @@ import { React, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import EventCard from "./EventCards";
 import chatify from "../../Assets/imageevent1.png";
-import {Modals} from '../Modal/Modal';
+import {Modal1} from '../Modal/Modal1';
+import {Modal2} from '../Modal/Modal2';
+import {Modal3} from '../Modal/Modal3';
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -49,7 +51,7 @@ function Event() {
               />
               <br></br>
               <Button onClick={openModal}>Register</Button>
-              <Modals showModal={showModal} setShowModal={setShowModal} />
+              <Modal1 showModal={showModal} setShowModal={setShowModal} />
               <Button>Know Your Team</Button>
           </Col>
 
@@ -64,7 +66,7 @@ function Event() {
             />
             <br></br>
             <Button onClick={openModal}>Register</Button>
-            <Modals showModal={showModal} setShowModal={setShowModal} />
+            <Modal2 showModal={showModal} setShowModal={setShowModal} />
             <Button>Know Your Team</Button>
           </Col>
 
@@ -79,7 +81,7 @@ function Event() {
             />
             <br></br>
             <Button onClick={openModal}>Register</Button>
-            <Modals showModal={showModal} setShowModal={setShowModal} />
+            <Modal3 showModal={showModal} setShowModal={setShowModal} />
             <Button>Know Your Team</Button>
           </Col>
         </Row>

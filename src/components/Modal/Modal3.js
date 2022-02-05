@@ -34,6 +34,7 @@ function MyVerticallyCenteredModal(props) {
             <label for="label3">Player3 Id:</label>
             <input type="text" class="form-control" id="label3" placeholder="Enter 3rd Player Id" />
           </div>
+          
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </Modal.Body>
@@ -44,7 +45,7 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
-export const Modals = ({showModal, setShowModal}) => {
+export const Modal3 = ({showModal, setShowModal}) => {
     return (
         <>
         <MyVerticallyCenteredModal
