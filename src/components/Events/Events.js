@@ -8,6 +8,9 @@ import {Modal1} from '../Modal/Modal1';
 import {Modal2} from '../Modal/Modal2';
 import {Modal3} from '../Modal/Modal3';
 import styled from 'styled-components';
+import {useEffect } from "react";
+import axios from 'axios';
+import url from '../../constants';
 
 const Button = styled.button`
   min-width: 100px;
@@ -30,6 +33,33 @@ const Button = styled.button`
 `;
 
 function Event() {
+
+
+  useEffect(()=>{
+    if(localStorage.getItem('token') !== null){
+      var config = {
+        method: 'get',
+        url: `${url}/ctfevent/`,
+        headers: { 
+          'Authorization': `Token ${localStorage.getItem('token')}`
+        }
+      };
+      
+      axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      
+    }
+
+   
+
+  },[])
+
+
   const [showModal1, setShowModal1] = useState(false);
 
   const openModal1 = () => {
