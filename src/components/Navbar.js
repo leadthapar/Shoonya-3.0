@@ -36,7 +36,7 @@ function NavBar() {
       axios(config)
       .then(function (response) {
         setPlayerId(response.data.palyerId)
-        console.log(playerId)
+        localStorage.setItem('playerid',playerId)
       })
       .catch(function (error) {
         console.log(error);
@@ -121,7 +121,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/sponsors"
@@ -129,7 +129,7 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "1px" }} /> Sponsors
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link as={Link} to="/faq" onClick={() => updateExpanded(false)}>

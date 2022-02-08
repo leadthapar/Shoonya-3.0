@@ -8,7 +8,7 @@ import url from '../../constants';
 function MyVerticallyCenteredModal(props) {
 
 
-  const [pid1, setpid1] = useState(null)
+  const [pid1, setpid1] = useState(localStorage.getItem('playerid'))
   const [pid2, setpid2] = useState(null)
   const [pid3, setpid3] = useState(null)
   const [pid4, setpid4] = useState(null)
@@ -42,7 +42,7 @@ function MyVerticallyCenteredModal(props) {
           <div class="row-modal">
             <div class="col-xs-2">
             <label for="label1" required>Player1 Id:</label>
-            <input onChange={(e)=>setpid1(e.target.value)} type="text" class="form-control" id="label1" placeholder="Enter 1st Player Id" required />
+            <input disabled defaultValue={pid1} onChange={(e)=>setpid1(e.target.value)} type="text" class="form-control" id="label1" placeholder="Enter 1st Player Id" required />
           </div>
           <div class="col-modal">
             <label for="phone">Enter a phone number:</label>
@@ -71,19 +71,27 @@ function MyVerticallyCenteredModal(props) {
           </div>
           <button onClick={(e)=>{
             e.preventDefault()
-            if(pid1 === null || pid2 === null || pid3 === null || pid4 === null){
+            if(pid1 === null && pid2 === null && pid3 === null && pid4 === null){
               setError(true)
-            }else{
+            }
+            else{
               setLoad(true)
-              var data = JSON.stringify({
-                "teamId": teamname,
-                "participant1": pid1,
-                "participant2": pid2,
-                "participant3": pid3,
-                "participant4": pid4,
-                "contactNumber": phone,
-                "discordId": did
-              });
+              let data1= {
+                "teamId" : teamname,
+                "contactNumber" : phone, 
+                "discordId" : did
+              }
+
+              if(pid1 !== null)
+              data1["participant1"] = pid1;
+              if(pid2 !== null)
+              data1["participant2"] = pid2;
+              if(pid3 !== null)
+              data1["participant3"] = pid3;
+              if(pid4 !== null)
+              data1["participant4"] = pid4;
+              
+              var data = JSON.stringify(data1);
               
               var config = {
                 method: 'post',

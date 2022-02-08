@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function MyVerticallyCenteredModal(props) {
 
-  const [pid1, setpid1] = useState(null)
+  const [pid1, setpid1] = useState(localStorage.getItem('playerid'))
   const [pid2, setpid2] = useState(null)
   const [did, setdid] = useState(null)
   const [teamname, setteamname] = useState(null)
@@ -34,7 +34,7 @@ function MyVerticallyCenteredModal(props) {
           <div class="row-modal">
             <div class="col-xs-2">
             <label for="label1" required>Player1 Id:</label>
-            <input onChange={(e)=>setpid1(e.target.value)} type="text" class="form-control" id="label1" placeholder="Enter 1st Player Id" required />
+            <input defaultValue={pid1} disabled onChange={(e)=>setpid1(e.target.value)} type="text" class="form-control" id="label1" placeholder="Enter 1st Player Id" required />
           </div>
           <div class="col-modal">
             <label for="phone">Enter a phone number:</label>
@@ -55,17 +55,21 @@ function MyVerticallyCenteredModal(props) {
           </div>
           <button onClick={(e)=>{
             e.preventDefault()
-            if(pid1 === null || pid2 === null ){
+            if(pid1 === null && pid2 === null ){
               setError(true)
             }else{
               setLoad(true)
-              var data = JSON.stringify({
-                "teamId": teamname,
-                "participant1": pid1,
-                "participant2": pid2,
-                "contactNumber": phone,
-                "discordId": did
-              });
+              let data1 = {
+                "teamId" : teamname,
+                "discordId" : did,
+                "contactNumber" : phone
+              }
+              if(pid1 !== null)
+              data1["participant1"] = pid1;
+
+              if(pid2 !== null)
+              data1["participant2"] = pid2;
+              var data = JSON.stringify(data1);
               
               var config = {
                 method: 'post',
