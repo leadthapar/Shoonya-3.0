@@ -14,7 +14,8 @@ function Home() {
   const [error, setError] = useState(false);
 
   const handleFailure = (result)=>{
-    alert(result);
+    console.log(result)
+    alert("There was some Error");
   }
 
   const handleLogin = (data)=>{
